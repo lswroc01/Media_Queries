@@ -1,5 +1,7 @@
+    @media screen {
+
     #container {
-	    margin: 0 auto;
+	   margin: 0 auto;
 		width: 100%;
 		background: #fff;
 	}
@@ -77,14 +79,15 @@
 		height: 1%;
 	}
 	
-	
+}
 
 /*Print Styling*/
-@media print{
-    #header, #navigation, #footer {
+@media print {
+
+	#header, #navigation, #footer {
     	display: none;
     }
-    
+
     #content {
     	margin-right: 0px;
     	width: 100%;
@@ -96,36 +99,30 @@
 		margin-left: 0px;
 		width: 100%;
     }
-    
 }
-}
+
 
 
 /*Small Phone Styling 240x320*/
 @media screen and (max-width: 320px) {
 
+		#aside {
+			display: none;
+		}
 
 		#content { 
 		 	padding: 0px;	
 		}
-		
+
 		#header {
     	    position: fixed;
-    	    top: 0px;
-    	    left: 0px;
-    	    width: 100%;
-    	    height: 25px;
     	}
-	
-		#aside {
-			display: none;
-		}
-	
-		#navigation {
+
+    	#navigation {
 			margin-top: 50px;
 		}
-	
-    	#navigation ul li a {
+
+		#navigation ul li a {
     	    float: none;
     	    display: block;
     		text-align: center;
