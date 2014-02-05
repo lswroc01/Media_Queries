@@ -90,8 +90,7 @@
 }
 
 /*Print Styling*/
-@media print
-{
+@media print{
     #header, #navigation, #footer {display: none;}
 
     #content
@@ -112,8 +111,7 @@
 
 
 /*Small Phone Styling 240x320*/
-@media (min-width: 240px) and (min-height: 320px)
-{
+@media (min-width: 240px) and (min-height: 320px){
 	#content
 		{padding: 0}
 
