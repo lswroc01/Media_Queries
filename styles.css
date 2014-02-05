@@ -90,5 +90,19 @@
     {
         display: none;
     }
+
+    #content
+    {
+    	margin-right: 0px;
+    	width: 100%;
+    }
+
+    #aside 
+    {
+    	float: none;
+		display: block;
+		margin-left: 0px;
+		width: 100%;
+    }
     
 }
