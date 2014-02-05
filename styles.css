@@ -34,7 +34,7 @@
 	#navigation li a {
 		display: block;
 		float: left;
-		padding: 5px 10px;
+		padding: 5px 51px;
 		color: #fff;
 		text-decoration: none;
 		border-right: 1px solid #fff;
@@ -111,15 +111,19 @@
 		}
 
 		#content { 
-		 	padding: 0px;	
+		 	width:100%
+		 	padding: 0px;
+		 	text-align: justified;
 		}
 
 		#header {
     	    position: fixed;
+    	    width:100%
     	}
 
     	#navigation {
-			margin-top: 50px;
+			margin-top: 80px;
+			width: 100%
 		}
 
 		#navigation ul li a {
@@ -128,8 +132,44 @@
     		text-align: center;
     	}
 
-    img {
-        max-width: 300px;
+        img {
+        width: 100%;
+        vertical-align: center; 
+    }
+
+}
+
+/*Small Phone Styling 240x320*/
+@media screen and (max-width: 470px) {
+
+		#aside {
+			display: none;
+		}
+
+		#content { 
+		 	width:100%
+		 	padding: 0px;
+		 	text-align: justified;
+		}
+
+		#header {
+    	    position: fixed;
+    	    width:100%
+    	}
+
+    	#navigation {
+			margin-top: 80px;
+			width: 100%
+		}
+
+		#navigation ul li a {
+    	    float: none;
+    	    display: block;
+    		text-align: center;
+    	}
+
+        img {
+        width: 100%;
     }
 
 }
