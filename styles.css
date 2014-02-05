@@ -1,44 +1,37 @@
 @media screen {
 
-	* 
-	{margin: 0; padding: 0} 
-	
-	#container
-	{
+	#container {
 	    margin: 0 auto;
 		width: 100%;
 		background: #fff;
 	}
 	
-	#header
-	{
+	#header {
 		background: #ccc;
 		padding: 20px;
 	}
 	
-	#header h1 { margin: 0; }
+	#header h1 {
+		margin: 0;
+	}
 	
-	#navigation
-	{
+	#navigation {
 		float: left;
 		width: 100%;
 		background: #333;
 	}
 	
-	#navigation ul
-	{
+	#navigation ul {
 		margin: 0;
 		padding: 0;
 	}
 	
-	#navigation ul li
-	{
+	#navigation ul li {
 		list-style-type: none;
 		display: inline;
 	}
 	
-	#navigation li a
-	{
+	#navigation li a {
 		display: block;
 		float: left;
 		padding: 5px 10px;
@@ -49,15 +42,13 @@
 	
 	#navigation li a:hover { background: #383; }
 	
-	#content-container
-	{
+	#content-container {
 		float: left;
 		width: 100%;
 		background: #FFF;
 	}
 	
-	#content
-	{
+	#content {
 		clear: left;
 		float: left;
 		width: 60%;
@@ -68,8 +59,7 @@
 	
 	#content h2 { margin: 0; }
 	
-	#aside
-	{
+	#aside {
 		float: right;
 		width: 26%;
 		padding: 20px 0;
@@ -77,10 +67,11 @@
 		display: inline;
 	}
 	
-	#aside h3 { margin: 0; }
+	#aside h3 {
+		margin: 0;
+	}
 	
-	#footer
-	{
+	#footer {
 		clear: left;
 		background: #ccc;
 		text-align: right;
@@ -111,16 +102,22 @@
 
 
 /*Small Phone Styling 240x320*/
-@media (min-width: 240px) and (min-height: 320px){
-	#content
-		{padding: 0}
+@media (min-device-width: 240px) and (min-device-height: 320px) {
+	
+	body {
+		padding: 0px;
+	}
 
-	#aside 
-		{display: none;}
+	#aside {
+		display: none;
+	}
 
-	#navigation 
-		{margin-top: 75px;}
+	#navigation {
+		margin-top: 75px;
+	}
 
-    #navigation ul li 
-    	{display: block;}
+    #navigation ul li {
+    	display: block;
+    }
+
 }
