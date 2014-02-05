@@ -1,4 +1,15 @@
-    @media screen {
+/*
+------------------------------------------------------
+Laura Thomas
+CIS 411
+Assignment #4
+Media Queries
+February 5, 2014
+------------------------------------------------------
+
+/*Generic Styling*/
+
+@media screen {
 
     #container {
 	   margin: 0 auto;
@@ -79,9 +90,18 @@
 		height: 1%;
 	}
 	
+	img {
+	top: 10%;
+	left: 10%;
+	border-radius: 3px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.9);
+	}
 }
 
-/*Print Styling*/
+
+
+/*Styling for Print Preview*/
+
 @media print {
 
 	#header, #navigation, #footer {
@@ -103,8 +123,10 @@
 
 
 
-/*Small Phone Styling 240x320*/
-@media screen and (max-width: 320px) {
+/*Styling for any screen less than 590px in width & any height; this will encompass all mobile devices 
+(590px chosen because at that point, the sidebar would normally overlap the image)*/
+
+@media screen and (max-width: 590px) {
 
 		#aside {
 			display: none;
@@ -113,7 +135,7 @@
 		#content { 
 		 	width:100%
 		 	padding: 0px;
-		 	text-align: justified;
+		 	text-align: left;
 		}
 
 		#header {
@@ -132,44 +154,13 @@
     		text-align: center;
     	}
 
-        img {
-        width: 100%;
-        vertical-align: center; 
-    }
-
-}
-
-/*Small Phone Styling 240x320*/
-@media screen and (max-width: 470px) {
-
-		#aside {
-			display: none;
+        img.responsive_img {
+			position: float;
+			max-width: 100%;
+			top: 10%;
+			left: 10%;
+			border-radius: 3px;
+			box-shadow: 0 3px 6px rgba(0,0,0,0.9);
 		}
-
-		#content { 
-		 	width:100%
-		 	padding: 0px;
-		 	text-align: justified;
-		}
-
-		#header {
-    	    position: fixed;
-    	    width:100%
-    	}
-
-    	#navigation {
-			margin-top: 80px;
-			width: 100%
-		}
-
-		#navigation ul li a {
-    	    float: none;
-    	    display: block;
-    		text-align: center;
-    	}
-
-        img {
-        width: 100%;
-    }
 
 }
