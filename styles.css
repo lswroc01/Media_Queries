@@ -83,13 +83,11 @@
 	height: 1%;
 }
 
-/*Print Style*/
+/*Print Styling*/
 @media print
 {
     #header, #navigation, #footer 
-    {
-        display: none;
-    }
+    {display: none;}
 
     #content
     {
@@ -105,4 +103,29 @@
 		width: 100%;
     }
     
+}
+
+
+/*Small Phone Styling 240x320*/
+@media (min-width: 240px) and (min-height: 320px)
+{
+	#content
+	{
+		padding: 0
+
+	}
+
+	#aside 
+	{
+		display: none;
+	}
+
+	#navigation 
+	{
+    	margin-top: 75px;
+    }
+    	#navigation ul li 
+    	{
+    	   display: block;
+    	}
 }
